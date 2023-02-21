@@ -30,7 +30,7 @@ Using a CDN we can improve the end user experience by making access to our appli
 
 ### Added AWS WAF service 
 
-Frontend served through the CDN is protected by an AWS WAF Web ACL that inspects and manages web requests. It can block them based on a specified criteria.
+- As an extra layer of security to protect our application, I integrated CloudFront CDN with an AWS WAF Web ACL that inspects and manages web requests. It can block them based on a specified criteria. For instance, it can block combinations of HTTP methods that are not supported by CloudFront.
 
 ### Create EventBridge rule 
 
