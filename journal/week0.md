@@ -12,6 +12,8 @@ After adding config in gitpod.yml, showed identity and listed EventBridge rules 
 
 Created a Zero Spend Budget ($1) because I want to be alerted as soon as any service crosses the free tier limits.
 
+Added a Policy to allow my admin user to access Budgets (see [Allow Billing Access to my Admin User](week0.md#allow-billing-access-to-my-admin-user)
+
 ![Alt text](assets/mb-proof-budget.png)
 
 ### Recreate Logical Architectural Design
@@ -46,3 +48,5 @@ Steps:
 
 Followed this guide:
 [IAM tutorial: Delegate access to the billing console](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html?icmpid=docs_iam_console#tutorial-billing-step2)
+
+![Alt text](assets/mb-proof-billing-policy.png)
