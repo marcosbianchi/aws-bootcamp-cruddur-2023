@@ -18,10 +18,11 @@ Added a Policy to allow my admin user to access Budgets (see [Allow Billing Acce
 
 ### Recreate Logical Architectural Design
 
-Introduced a change in the frontend part, assuming that server side processing is not needed and it can be served from an S3 bucket. Access to this bucket is restricted to only the CDN.
+- Introduced a change in the frontend part, assuming that server side processing is not needed and it can be served from an S3 bucket. Access to this bucket is restricted to only the CDN.
 Using a CDN we can improve the end user experience by making access to our application more "locally".
+- Also added a VPC Endpoint to communicate the backend service and the DynamoDB database without requering to use a NAT gateway and thus reduce costs.
 
-![Alt text](assets/mb-proof-arch-diagram-lucidcharts.png)
+![Alt text](assets/mb-proof-arch-diagram-lucidchart.png)
 
 [Link to diagram (comments are welcome!)](https://lucid.app/lucidchart/a261f663-6e35-45a3-b1b6-5e1bdcfaed0b/edit?viewport_loc=-271%2C30%2C2591%2C1305%2C0_0&invitationId=inv_8751caeb-e57a-4862-b56e-c24dce22d3a0)
 
