@@ -12,7 +12,7 @@ After adding config in gitpod.yml, showed identity and listed EventBridge rules 
 
 Created a Zero Spend Budget ($1) because I want to be alerted as soon as any service crosses the free tier limits.
 
-Added a Policy to allow my admin user to access Budgets (see [Allow Billing Access to my Admin User](week0.md#allow-billing-access-to-my-admin-user)
+Added a Policy to allow my admin user to access Budgets (see [Allow Billing Access to my Admin User](week0.md#allow-billing-access-to-my-admin-user))
 
 ![Alt text](assets/mb-proof-budget.png)
 
