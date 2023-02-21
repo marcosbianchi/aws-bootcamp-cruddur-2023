@@ -37,5 +37,12 @@ Created an event rule in the default event bus that catches all AWS Health event
 
 ![Alt text](assets/mb-proof-eventbridge-rule-cli.png)
 
+### Allow Billing Access to my Admin User
 
+Steps:
+1. Created a BillingFullAccess policy for my admin user marcos.bianchi
+2. Created user group "billing-admins" and attached previous policy
+3. Added my user marcos.bianchi to the previous group
 
+Followed this guide:
+[IAM tutorial: Delegate access to the billing console](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html?icmpid=docs_iam_console#tutorial-billing-step2)
