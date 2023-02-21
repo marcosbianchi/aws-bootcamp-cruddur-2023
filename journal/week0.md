@@ -1,1 +1,41 @@
 # Week 0 — Billing and Architecture
+
+## Required Homework/Tasks
+
+### Install and Verify AWS CLI 
+
+After adding config in gitpod.yml, showed identity and listed EventBridge rules from a terminal 
+
+![aws-cli-proof](assets/mb-proof-aws-cli.png)
+
+### Create a Budget
+
+Created a Zero Spend Budget ($1) because I want to be alerted as soon as any service crosses the free tier limits.
+
+![Alt text](assets/mb-proof-budget.png)
+
+### Recreate Logical Architectural Design
+
+Introduced a change in the frontend part, assuming that server side processing is not needed and it can be served from an S3 bucket. Access to this bucket is restricted to only the CDN.
+Using a CDN we can improve the end user experience by making access to our application more "locally".
+
+
+![Alt text](assets/mb-proof-arch-diagram-lucidcharts.png)
+
+
+## Homework Challenges
+
+### Added AWS WAF service 
+
+Frontend served through the CDN is protected by an AWS WAF Web ACL that inspects and manages web requests. It can block them based on a specified criteria.
+
+### Create EventBridge rule 
+
+Created an event rule in the default event bus that catches all AWS Health events and added an SNS Topic as a target to send emails each time the rule triggers.
+
+![Alt text](assets/mb-proof-eventbridge-health-rule.png)
+
+![Alt text](assets/mb-proof-eventbridge-rule-cli.png)
+
+
+
