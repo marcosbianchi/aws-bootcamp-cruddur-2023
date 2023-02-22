@@ -26,6 +26,11 @@ Using a CDN we can improve the end user experience by making access to our appli
 
 [Link to diagram (comments are welcome!)](https://lucid.app/lucidchart/a261f663-6e35-45a3-b1b6-5e1bdcfaed0b/edit?viewport_loc=-271%2C30%2C2591%2C1305%2C0_0&invitationId=inv_8751caeb-e57a-4862-b56e-c24dce22d3a0)
 
+### Conceptual Diagram
+
+![Alt text](assets/conepctual-diagram-mb%20Medium.jpeg)
+
+
 ## Homework Challenges
 
 ### Added AWS WAF service 
